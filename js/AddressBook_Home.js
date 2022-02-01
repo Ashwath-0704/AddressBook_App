@@ -10,6 +10,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 });
 
 const getPersonDataFromStorage = () => {
+
     return localStorage.getItem("AddressBookData") ? JSON.parse(localStorage.getItem("AddressBookData")) : [];
 }
 

@@ -52,5 +52,74 @@ class AddressBook {
     toString() {
         return (" Full name = " + this._name + ", phoneNumber= " + this._phoneNumber + ", address= " + this._address + ", city= " + this._city + ", state= " + this._state + ", zip= " + this._zipCode);
     }
-
 }
+
+/**
+ * @purpose -> On Document Load Set Event Listeners
+ */
+window.addEventListener('DOMContentLoaded', (event) => {
+    const name = document.querySelector('#name');
+    const textError = document.querySelector('.text-error');
+    name.addEventListener('input', function() {
+        let nameLength = name.value
+        if (nameLength == 0) {
+            textError.textContent = "";
+            return;
+        }
+        try {
+            (new AddressBook()).name = name.value;;
+            textError.textContent = "";
+        } catch (e) {
+            textError.textContent = e;
+        }
+    });
+
+    const phoneNumber = document.querySelector('#phoneNumber');
+    const phoneNumberError = document.querySelector('.phoneNumber-error');
+    phoneNumber.addEventListener('input', function() {
+        let phoneNumberLength = phoneNumber.value
+        if (phoneNumberLength == 0) {
+            phoneNumberError.textContent = "";
+            return;
+        }
+        try {
+            (new AddressBook()).phoneNumber = phoneNumber.value;;
+            phoneNumberError.textContent = "";
+        } catch (e) {
+            phoneNumberError.textContent = e;
+        }
+    });
+
+    const zipCode = document.querySelector('#zipCode');
+    const zipCodeError = document.querySelector('.zipCode-error');
+    zipCode.addEventListener('input', function() {
+        let zipCodeLength = zipCode.value
+        if (zipCodeLength == 0) {
+            zipCodeError.textContent = "";
+            return;
+        }
+        try {
+            (new AddressBook()).zipCode = zipCode.value;;
+            zipCodeError.textContent = "";
+        } catch (e) {
+            zipCodeError.textContent = e;
+        }
+    });
+
+    const address = document.querySelector('#address');
+    const addressError = document.querySelector('.address-error');
+    address.addEventListener('input', function() {
+        let addressLength = address.value
+        if (addressLength == 0) {
+            addressError.textContent = "";
+            return;
+        }
+        try {
+            (new AddressBook()).address = address.value;;
+            addressError.textContent = "";
+        } catch (e) {
+            addressError.textContent = e;
+        }
+    });
+
+});
