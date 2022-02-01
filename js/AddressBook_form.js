@@ -166,3 +166,20 @@ const createAddressBookPerson = () => {
     alert(addressBook.toString());
     return addressBook;
 }
+
+/**
+ * @purpose ->Reset the Employee Payroll Form
+ */
+
+const resetForm = () => {
+    document.querySelector('#name').value = '';
+    document.querySelector('#phoneNumber').value = '';
+    document.querySelector('#address').value = '';
+    document.querySelector('#zipCode').value = '';
+    document.querySelector('#city').value = 0;
+    document.querySelector('#state').value = 0;
+    // document.querySelector('.text-error').value = "";
+    // document.querySelector('.phoneNumber-error').value = "";
+    // document.querySelector('.zipCode-error').value = "";
+    // document.querySelector('.address-error').value = "";
+}
