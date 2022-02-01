@@ -6,6 +6,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.querySelector(".emp-count").textContent = addressBookList.length;
     createInnerHtml();
     localStorage.removeItem('editEmp');
+
 });
 
 const getPersonDataFromStorage = () => {

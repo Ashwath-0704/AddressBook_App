@@ -52,4 +52,5 @@ class AddressBook {
     toString() {
         return (" Full name = " + this._name + ", phoneNumber= " + this._phoneNumber + ", address= " + this._address + ", city= " + this._city + ", state= " + this._state + ", zip= " + this._zipCode);
     }
+
 }
