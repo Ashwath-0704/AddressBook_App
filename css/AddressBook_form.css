@@ -60,3 +60,87 @@ body {
     flex-flow: row;
     justify-content: space-evenly;
 }
+
+
+/* UC 2 – On Document Load Set Event Listeners */
+
+.form-content {
+    min-height: calc(100%-80px);
+    background-color: rgb(215, 223, 214);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid green;
+}
+
+.form {
+    margin-top: 40px;
+    width: 50%;
+    padding: 0px;
+    background: #838080 0% 0% no-repeat padding-box;
+    border-radius: 0px;
+    opacity: 2;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
+.form-head {
+    font: normal normal bold 24px/37px Roboto, Regular;
+    letter-spacing: 2px;
+    background-color: #008CFF;
+    text-transform: capitalize;
+    opacity: 1;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.row-content {
+    display: block;
+    margin-left: 50px;
+    margin-right: 80px
+}
+
+.label {
+    min-width: 140px;
+    margin: inherit;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.text {
+    margin: 0px auto;
+    font-size: 16px;
+    color: #020202;
+    opacity: 2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #020202;
+    resize: vertical;
+    border-radius: 50px;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    display: flex;
+}
+
+#date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
