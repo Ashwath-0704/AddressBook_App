@@ -1,16 +1,15 @@
-let addressBookList;
+// UC 6– Display Person Details from Local Storage
 
+let addressBookList;
 window.addEventListener('DOMContentLoaded', (event) => {
     addressBookList = getPersonDataFromStorage();
     console.log(addressBookList);
     document.querySelector(".emp-count").textContent = addressBookList.length;
     createInnerHtml();
     localStorage.removeItem('editEmp');
-
 });
 
 const getPersonDataFromStorage = () => {
-
     return localStorage.getItem("AddressBookData") ? JSON.parse(localStorage.getItem("AddressBookData")) : [];
 }
 

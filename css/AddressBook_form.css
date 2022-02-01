@@ -62,7 +62,7 @@ body {
 }
 
 
-/* UC 2 – On Document Load Set Event Listeners */
+/* UC 2 – On Document Load Set Event Listeners and UC 4 – Employee Payroll Form with Gender, Department and Salary Range*/
 
 .form-content {
     min-height: calc(100%-80px);
@@ -162,4 +162,185 @@ select {
 
 select:hover {
     background-color: #E2E2E2;
+}
+
+
+/* UC 6 – Ability to add Notes and Button */
+
+.buttonParent {
+    /* edited */
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-flow: row-reverse;
+}
+
+.button {
+    font-size: 20px;
+    font-family: Roboto;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+    background: transparent;
+    border: none;
+    font-weight: 400;
+    min-width: 140px;
+    padding: 7px 7px;
+    border: 1px solid #000000;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #000000;
+}
+
+.submitButton {
+    border: none;
+    border: 1px solid rgb(0, 0, 0);
+    margin-right: 30px;
+}
+
+.resetButton {
+    margin-right: 10px;
+}
+
+error-output {
+    margin-left: 10px;
+    font-size: 15px;
+    font-style: italic;
+    color: rgb(231, 66, 66);
+}
+
+
+/* UC7 : Using the UX design set the button style appropriately */
+
+a.button:hover {
+    background: rgb(234, 238, 237);
+    color: rgb(3, 3, 3);
+    border: #000000 solid;
+}
+
+.submitButton:hover {
+    background: rgb(233, 238, 237);
+    color: rgb(3, 3, 3);
+    border: #000000 solid;
+}
+
+.resetButton:hover {
+    background: rgb(231, 236, 235);
+    color: rgb(3, 3, 3);
+    border: #000000 solid;
+}
+
+.department {
+    margin-left: 30px;
+}
+
+
+/* UC 6 Exts – Adding Media Queries */
+
+@media only screen and (max-width: 960px) {
+    .form {
+        width: 80%;
+        padding: 44px 20px;
+    }
+    .button {
+        margin-bottom: 10px;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width:680px) {
+    .submit-reset {
+        display: inline-flex;
+        flex-direction: row;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .header {
+        padding: 15px 0;
+        background-color: #252725;
+    }
+    .emp-text {
+        letter-spacing: 3px;
+        color: #f6f7f5;
+        padding-left: 5px;
+    }
+    .emp-payroll {
+        color: #fbfdff;
+    }
+    .form {
+        margin-top: 10px;
+        background-color: #252725;
+        overflow: hidden;
+        color: #ffffff;
+    }
+    .text {
+        color: #ffffff;
+    }
+    .form-head {
+        color: #ffffff;
+    }
+    .submit-reset {
+        width: 100%;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    select {
+        color: #ffffff;
+    }
+    select:hover {
+        color: #000000;
+    }
+    .form {
+        width: 85%;
+        padding: 44px 20px;
+    }
+    .profile-label {
+        margin-left: 0px;
+    }
+    .button {
+        border: 1px solid #eff1ee;
+        background-color: #fcfdf7;
+        color: #000000;
+    }
+    .button:hover {
+        background-color: #c0e44d;
+        color: #151610;
+    }
+}
+
+@media only screen and (max-width:525px) {
+    .buttonParent {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .submit-reset {
+        display: contents;
+        margin: 0%;
+    }
+    .submitButton {
+        margin-right: 0%;
+    }
+    .resetButton {
+        margin-right: 0%;
+    }
+}
+
+
+/* for all mobiles */
+
+@media only screen and (max-width:415px) {
+    .row-content-new {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    select {
+        color: #ffffff;
+    }
+    select:hover {
+        color: #000000;
+    }
 }
